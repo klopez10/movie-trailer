@@ -1,45 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Coco</title>
+    <title>A Quiet Place</title>
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.3.12/plyr.css">
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
+
 <body>
-    
-    <h1>Coco</h1>
+<!-- FULL LANDING PAGE -->
+ <header>
+	<h4>If they hear you, they hunt you.</h4>
+	<h1>A Quiet Place</h1>
+</header>
 
-    <video src="video/trailer.mp4" controls></video>
+<!-- NAVIGATION -->
+<ul id="nav">
+    <li><a href="#section-1" class="js-anchor-link">Watch Trailer</a></li>
+    <li><a href="#section-2" class="js-anchor-link">About the Film</a></li>
+    <li><a href="#section-3" class="js-anchor-link">Cast</a></li>
+</ul>
 
-    <main>
-        <section class="a">Miguel Rivera</section>
-        <section class="b">Hector</section>
-        <section class="c">Ernesto de la Cruz</section>
-        <section class="d">Abuelita</section>
-        <section class="e">Mama Coco</section>
-        <section class="f">Imelda</section>
-    </main>
-    
+<!-- TRAILER -->
+<div id="section-1" class="section">
+    <h4 class="bold-uppercase">PG-13 | 1h 30min | Drama, Horror, Sci-Fi | April 6, 2018 (USA)</h4>
+    <div class="container">
+        <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="WR7cc5t7tv8"></div>
+    </div>
+</div>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Plugins -->
-    <!-- My Scripts -->
-    <script src="js/scripts.js"></script>
+<!-- ABOUT THE FILM -->
+<div id="section-2" class="section">
+    <section id="film-row-1">
+        <h1 class="section-titles">About the Film</h1>
+    </section>
+
+    <section id="film-column-1">
+        <h4>In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.</h4>
+  	    <p>Rule #1. Don’t make a sound.</p>
+		    <p>Rule #2. Never leave the path.</p>
+		    <p>Rule #3. Red means run.</p>
+		    <p>Over three months in 2020, Earth has been overrun by sightless predators of unknown origin who have hypersensitive hearing and indestructible, armored skin. From their attacks on anything that makes noise, human and animal populations are devastatingly few.</p>  
+		    <p>To learn the rules of survival in this muted dystopia is essential; nevertheless, an otherwise joyous event is threatening an already frail stability.</p>
+		    <p>All it takes is one noise and everything can go wrong.</p>
+    </section>
+
+    <section id="film-column-2">
+        <h4>Director</h4>
+        <p>John Krasinski</p>
+    </section>
+
+    <section id="film-column-3">
+        <h4>Writers</h4>
+        <p>Bryan Woods</p>
+        <p>Scott Beck</p>
+        <p>John Krasinski</p>
+    </section>
+</div>
+
+<!-- CAST -->
+<div id="section-3" class="section">
+    <section id="cast-row-1">
+        <h1 class="section-titles">Cast</h1>
+    </section>
+
+    <section id="cast-column-1">
+        <img src="https://i.pinimg.com/originals/da/90/2d/da902d32a519c3e66ce22b986c405c8e.jpg" alt="Emily Blunt">
+    </section>
+
+    <section id="cast-column-2">
+        <img class="size-correction" src="https://cdn.telanganatoday.com/wp-content/uploads/2018/06/JOHN-KRASINSKI-386x400.jpg" alt="John Krasinski">
+    </section>
+
+    <section id="cast-column-3">
+        <img src="http://cdn01.cdn.justjaredjr.com/wp-content/uploads/2018/04/millicent-facts/millicent-simmonds-10-fun-facts-quiet-place-star-02.jpg" alt="Millicent Simmonds">
+    </section>
+
+    <section id="cast-row-3-column-1">
+        <img class="size-correction" src="https://pmcvariety.files.wordpress.com/2018/04/noah-jupe.jpg?w=1000" alt="Noah Jupe">
+    </section>
+
+    <section id="cast-row-3-column-2">
+        <img src="https://photos.smugmug.com/Family/Cade-Thomas-Woodward/i-WnpbHq3/0/caebf58f/L/2016_06_Cade%20Thomas%20Woodward%2010-L.jpg" alt="Cade Woodward">
+    </section>
+
+    <section id="cast-row-3-column-3">
+        <img class="size-correction" src="https://vignette.wikia.nocookie.net/aquietplace/images/6/62/Leon_Russom-0.png/revision/latest?cb=20180423190659" alt="Leo Russom">
+    </section>
+</div>
+
+<!-- COPYRIGHT -->
+<footer>
+    <p>&copy; Copyright 2018 - <span>0000</span></p>  
+</footer>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Plugins -->
+<script src="https://cdn.plyr.io/3.3.12/plyr.js"></script>
+<!-- My Scripts -->
+<script src="js/scripts.js"></script>
+
 </body>
+
 </html>

@@ -1,18 +1,242 @@
-/* My Awesome Styles */
+/* UNIVERSAL STYLING */
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-/* Diagnostic Styling 
-  * Change Background Color
-  * Outline Elements
-*/
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
 
-/* * {
-    outline: 1px dotted black;
-} */
+h1 {
+  margin: 0 0 20px 0;
+}
 
-video {
-  /* border: 10px solid black; */
-  /* Kludge */
+h4, h6, .bold-uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0;
+}
+
+h4 {
+  color: red;
+  margin-bottom: -10px;
+}
+
+/* FULL LANDING PAGE */
+header {
+	color: #fff;
+	
+	height: 100vh;
+	background-image: url(https://filmdaily.co/wp-content/uploads/2018/04/a-quiet-place-indie-horror.jpg);
+	background-size: cover;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+  font-size: 100px;
+  margin-top: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 55px red, 0 0 75px red;
+  text-align: center;
+  animation: text-flicker 5s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  
+  1% {
+    opacity: 0.9;
+  }
+  
+  5% {
+    opacity: 1;
+  }
+  
+  7% {
+    opacity: 0.5;
+  }
+  
+  15% {
+    opacity: 1;
+  }
+  
+  16% {
+    opacity: 0.4;
+  }
+  
+  20% {
+    opacity: 0.9;
+  }
+  
+  22% {
+    opacity: 0.7;
+  }
+  
+  30% {
+    opacity: 1;
+  }
+  
+  35% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0.4;
+  }
+  
+  60% {
+    opacity: 1;
+  }
+  
+  64% {
+    opacity: 1;
+  }
+  
+  70% {
+    opacity: 0.4;
+  }
+  
+  85% {
+    opacity: 0.6;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+/* NAVIGATION */
+#nav {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  background: #333;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px;
+  list-style: none;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+#nav a {
+  display: block;
+  padding: 10px 10px;
+  color: #fff;
+}
+
+#nav a:hover {
+  color: red;
+}
+
+/* SCROLLING SECTIONS */
+.section {
+  height: 530px;
+  padding: 30px 200px;
+}
+
+.section-titles {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+/* TRAILER */
+#section-1 {
+  background: #eee;
+  text-align: center;
+}
+
+div .container {
+	margin: 20px auto;
+	max-width: 680px;
+}
+
+.plyr__video-embed iframe {
+	top: -50%;
+	height: 200%;
+}
+
+/* ABOUT THE FILM */
+#section-2 {
+  background: #80808060;
+  margin-bottom: -80px;
+  
+  display: grid;
+  grid-template-columns: 500px 150px 150px;
+  grid-column-gap: 50px;
+  
+  grid-template-rows: auto auto;
+  grid-row-gap: 30px;
+}
+
+#film-row-1 {
+  grid-column: 1 / span 3;
+}
+
+#film-column-1, #film-column-2, #film-column-3 {
+  grid-row: 2;
+  margin-top: -150px;
+}
+
+#film-column-1 p, #film-column-3 p {
+  margin-bottom: -5px;
+}
+
+#film-column-1 h4 {
+  color: black;
+}
+
+/* CAST */
+#section-3 {
+  background: #eee;
+  height: 775px;
+  
+  display: grid;
+  grid-template-columns: 249px 249px 249px 1px;
+  grid-column-gap: 50px;
+  
+  grid-template-rows: 250px 40px 275px;
+  grid-row-gap: 50px;
+}
+
+#cast-row-1 {
+  grid-column: 1 / span 4;
+}
+
+#cast-column-1, #cast-column-2, #cast-column-3 {
+  grid-row: 2;
+  margin-top: -235px;
+  overflow: hidden;
+}
+
+#cast-row-3-column-1, #cast-row-3-column-2, #cast-row-3-column-3 {
+  grid-row: 3;
+  overflow: hidden;
+}
+
+img {
   width: 100%;
+}
+
+.size-correction {
   height: 100%;
-  padding: 50px 0px 50px 0px;
+  width: auto;
+  align-self: center;
+}
+
+/* FOOTER */
+footer {
+  background: #80808060;
+  padding: 5px;
+  text-align: center;
 }
