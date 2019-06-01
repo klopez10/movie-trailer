@@ -139,10 +139,45 @@ header h1 {
   color: red;
 }
 
+#nav img {
+	filter: brightness(0) invert(1);
+}
+
+#nav img:hover {
+	filter: none;
+}
+
+.horizontal-list {
+	padding-left: 20px;
+}
+
+.horizontal-list li {
+	list-style: none;
+	display: inline-block;
+}
+
+#twitter {
+  width: 35px;
+  height: auto;
+	margin-bottom: -6px;
+}
+
+#instagram {
+  width: auto;
+  height: 25px;
+}
+
+#facebook {
+  width: auto;
+  height: 25px;
+	margin-bottom: 1px;
+}
+
 /* SCROLLING SECTIONS */
 .section {
   height: 530px;
-  padding: 30px 200px;
+  padding: 30px;
+  justify-content: center;
 }
 
 .section-titles {
