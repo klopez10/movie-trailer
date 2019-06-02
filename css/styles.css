@@ -6,7 +6,7 @@ html, body {
 
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   text-decoration: none;
 }
@@ -25,6 +25,7 @@ h4, h6, .bold-uppercase {
 h4 {
   color: red;
   margin-bottom: -10px;
+  padding-bottom: 6px;
 }
 
 /* FULL LANDING PAGE */
@@ -32,7 +33,7 @@ header {
 	color: #fff;
 	
 	height: 100vh;
-	background-image: url(https://filmdaily.co/wp-content/uploads/2018/04/a-quiet-place-indie-horror.jpg);
+	background-image: url('../assets/LandingPage.jpg');
 	background-size: cover;
 	
 	display: flex;
@@ -196,15 +197,10 @@ div .container {
 	max-width: 680px;
 }
 
-.plyr__video-embed iframe {
-	top: -50%;
-	height: 200%;
-}
-
 /* ABOUT THE FILM */
 #section-2 {
   background: #80808060;
-  margin-bottom: -80px;
+  margin-bottom: -60px;
   
   display: grid;
   grid-template-columns: 500px 150px 150px;
@@ -234,7 +230,7 @@ div .container {
 /* CAST */
 #section-3 {
   background: #eee;
-  height: 775px;
+  height: 755px;
   
   display: grid;
   grid-template-columns: 249px 249px 249px 1px;
@@ -264,9 +260,14 @@ img {
 }
 
 .size-correction {
-  height: 100%;
   width: auto;
-  align-self: center;
+  height: 100%;
+  float: right;
+}
+
+#Krasinski-left, #Jupe-left {
+  position: absolute;
+  margin-left: -140px;
 }
 
 .hover {

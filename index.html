@@ -8,10 +8,10 @@
     <title>A Quiet Place</title>
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -34,17 +34,20 @@
     <li><a href="#section-2" class="js-anchor-link">About the Film</a></li>
     <li><a href="#section-3" class="js-anchor-link">Cast</a></li>
     <ul class="horizontal-list">
-        <li><a href="https://twitter.com/quietplacemovie?lang=en"><img id="twitter" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" alt="Twitter logo"></a></li>
-        <li><a href="https://www.instagram.com/aquietplacemovie/?hl=en"><img id="instagram" src="http://pluspng.com/img-png/instagram-png-instagram-png-logo-1455.png" alt="Instagram logo"></a></li>
-        <li><a href="https://www.facebook.com/AQuietPlaceMovie/"><img id="facebook" src="https://www.sccpre.cat/mypng/full/1-12925_facebook-logo-png-transparent-vector-facebook-logo-transparent.png" alt="Facebook logo"></a></li>
+        <li><a href="https://twitter.com/quietplacemovie?lang=en"><img id="twitter" src="assets/TwitterLogo.png" alt="Twitter logo"></a></li>
+        <li><a href="https://www.instagram.com/aquietplacemovie/?hl=en"><img id="instagram" src="assets/InstagramLogo.png" alt="Instagram logo"></a></li>
+        <li><a href="https://www.facebook.com/AQuietPlaceMovie/"><img id="facebook" src="assets/FacebookLogo.png" alt="Facebook logo"></a></li>
     </ul>
 </ul>
 
 <!-- TRAILER -->
 <div id="section-1" class="section">
-    <h4 class="bold-uppercase">PG-13 | 1h 30min | Drama, Horror, Sci-Fi | April 6, 2018 (USA)</h4>
+    <h4 class="bold-uppercase">PG-13 | 1h 30min | Drama, Horror, Sci-Fi | April 6, 2018</h4>
     <div class="container">
-        <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="WR7cc5t7tv8"></div>
+        <video id="player">
+            <source src="assets/trailer.mp4" type="video/mp4"/>
+            <source src="assets/trailer.webm" type="video/webm"/>
+        </video>
     </div>
 </div>
 
@@ -57,11 +60,11 @@
     <section id="film-column-1">
         <h4>In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.</h4>
   	    <p>Rule #1. Don’t make a sound.</p>
-		    <p>Rule #2. Never leave the path.</p>
-		    <p>Rule #3. Red means run.</p>
-		    <p>Over three months in 2020, Earth has been overrun by sightless predators of unknown origin who have hypersensitive hearing and indestructible, armored skin. From their attacks on anything that makes noise, human and animal populations are devastatingly few.</p>  
-		    <p>To learn the rules of survival in this muted dystopia is essential; nevertheless, an otherwise joyous event is threatening an already frail stability.</p>
-		    <p>All it takes is one noise and everything can go wrong.</p>
+		<p>Rule #2. Never leave the path.</p>
+		<p>Rule #3. Red means run.</p>
+		<p>Over three months in 2020, Earth has been overrun by sightless predators of unknown origin who have hypersensitive hearing and indestructible, armored skin. From their attacks on anything that makes noise, human and animal populations are devastatingly few.</p>  
+		<p>To learn the rules of survival in this muted dystopia is essential; nevertheless, an otherwise joyous event is threatening an already frail stability.</p>
+		<p>All it takes is one noise and everything can go wrong.</p>
     </section>
 
     <section id="film-column-2">
@@ -84,42 +87,42 @@
     </section>
 
     <section class="hover" id="cast-column-1">
-        <img src="https://i.pinimg.com/originals/da/90/2d/da902d32a519c3e66ce22b986c405c8e.jpg" alt="Emily Blunt">
+        <img src="assets/EmilyBlunt.jpg" alt="Emily Blunt">
         <div class="hover-opacity">
             <h4 class="hover-text">Emily Blunt</h4>
         </div>
     </section>
 
     <section class="hover" id="cast-column-2">
-        <img class="size-correction" src="https://cdn.telanganatoday.com/wp-content/uploads/2018/06/JOHN-KRASINSKI-386x400.jpg" alt="John Krasinski">
+        <img class="size-correction" id="Krasinski-left" src="assets/JohnKrasinski.jpg" alt="John Krasinski">
         <div class="hover-opacity">
             <h4 class="hover-text">John Krasinski</h4>
         </div>
     </section>
 
     <section class="hover" id="cast-column-3">
-        <img src="http://cdn01.cdn.justjaredjr.com/wp-content/uploads/2018/04/millicent-facts/millicent-simmonds-10-fun-facts-quiet-place-star-02.jpg" alt="Millicent Simmonds">
+        <img src="assets/MillicentSimmonds.jpg" alt="Millicent Simmonds">
         <div class="hover-opacity">
             <h4 class="hover-text">Millicent Simmonds</h4>
         </div>
     </section>
 
     <section class="hover" id="cast-row-3-column-1">
-        <img class="size-correction" src="https://pmcvariety.files.wordpress.com/2018/04/noah-jupe.jpg?w=1000" alt="Noah Jupe">
+        <img class="size-correction" id="Jupe-left" src="assets/NoahJupe.jpg" alt="Noah Jupe">
         <div class="hover-opacity">
             <h4 class="hover-text">Noah Jupe</h4>
         </div>
     </section>
 
     <section class="hover" id="cast-row-3-column-2">
-        <img src="https://photos.smugmug.com/Family/Cade-Thomas-Woodward/i-WnpbHq3/0/caebf58f/L/2016_06_Cade%20Thomas%20Woodward%2010-L.jpg" alt="Cade Woodward">
+        <img src="assets/CadeWoodward.jpg" alt="Cade Woodward">
         <div class="hover-opacity">
             <h4 class="hover-text">Cade Woodward</h4>
         </div>
     </section>
 
     <section class="hover" id="cast-row-3-column-3">
-        <img class="size-correction" src="https://vignette.wikia.nocookie.net/aquietplace/images/6/62/Leon_Russom-0.png/revision/latest?cb=20180423190659" alt="Leo Russom">
+        <img class="size-correction" src="assets/LeonRussom.png" alt="Leo Russom">
         <div class="hover-opacity">
             <h4 class="hover-text">Leo Russom</h4>
         </div>
@@ -128,7 +131,7 @@
 
 <!-- COPYRIGHT -->
 <footer>
-    <p>&copy; Copyright 2018 - <span>0000</span></p>  
+    <p>&copy; Copyright 2018 - <span>0000</span> PARAMOUNT PICTURES</p>  
 </footer>
 
 <!-- jQuery -->
